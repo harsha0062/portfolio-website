@@ -117,8 +117,7 @@ const Hero = () => {
   const roles = [
     'Python & Java Developer',
     'DSA Practitioner',
-    'AI & Cloud Explorer',
-    'Event Organizer'
+    'AI & Cloud Explorer'
   ];
 
   const handleContactClick = (e) => {

@@ -7,7 +7,7 @@ const About = () => {
     { label: 'DSA Solved', value: '300+', detail: 'LeetCode & Practice', icon: <FiTerminal className="text-neon-cyan" /> },
     { label: 'Academics (GPA)', value: '8.07', detail: 'Anurag University', icon: <FiBookOpen className="text-neon-blue" /> },
     { label: 'Certifications', value: '6', detail: 'Google, Infosys, MongoDB', icon: <FiCpu className="text-neon-purple" /> },
-    { label: 'Activities', value: 'Cloud Club', detail: 'Event Organizer', icon: <FiTrendingUp className="text-neon-cyan" /> }
+    { label: 'Activities', value: 'Cloud Club', detail: 'Club Member', icon: <FiTrendingUp className="text-neon-cyan" /> }
   ];
 
   const containerVariants = {
@@ -73,9 +73,9 @@ const About = () => {
             </p>
 
             <p className="text-gray-400 font-sans leading-relaxed text-base md:text-lg">
-              Beyond my coursework, I serve as an **Event Organizer for the Cloud Club** at Anurag University, where I organize 
-              and coordinate technical workshops and bootcamps, which helps me refine my team collaboration and leadership skills. 
-              I have a strong willingness to learn new technologies and quickly adapt to professional development environments.
+              Beyond my coursework, I'm active in the Cloud Club at Anurag University, where I participate in and help coordinate
+              technical workshops and bootcamps. This involvement helps me refine team collaboration and leadership skills. I have a
+              strong willingness to learn new technologies and quickly adapt to professional development environments.
             </p>
 
             <div className="p-4 border border-cyber-border rounded-lg bg-cyber-dark/50 font-mono text-xs text-neon-blue/90 space-y-2">

@@ -3,19 +3,7 @@ import { motion } from 'framer-motion';
 import { FiCloud, FiCpu, FiCode, FiAward, FiCheckCircle } from 'react-icons/fi';
 
 const experiences = [
-  {
-    title: 'Cloud Club – Event Organizer',
-    organization: 'Anurag University, Hyderabad',
-    duration: 'Ongoing',
-    icon: <FiCloud className="text-neon-cyan" />,
-    description: 'Serving as Event Organizer for the student cloud compute organization, helping facilitate technical training.',
-    bullets: [
-      'Organized and coordinated technical workshops and campus bootcamps.',
-      'Refined communication, leadership, and team collaboration skills.',
-      'Promoted peer study tracks regarding cloud practitioner foundations.'
-    ],
-    tags: ['Cloud Computing', 'Event Management', 'Collaboration', 'AWS']
-  },
+  
   {
     title: 'Secured Runner-Up – Tech Xcelerate',
     organization: 'Anurag University & Tech Sponsors',
