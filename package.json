@@ -2,6 +2,7 @@
   "name": "harsha-portfolio",
   "private": true,
   "version": "1.0.0",
+  "description": "Personal portfolio website built with React, Vite, and Tailwind CSS",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
