@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  
+  --color-neon-cyan: #66fcf1;
+  --color-neon-blue: #00e5ff;
+  --color-neon-purple: #b026ff;
+  --color-cyber-dark: #07080d;
+  --color-cyber-surface: rgba(17, 20, 32, 0.6);
+  --color-cyber-border: rgba(102, 252, 241, 0.15);
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-border-glow: border-glow 3s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2833;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #66fcf1;
+}
+
+/* Custom Glassmorphism Card Style */
+.glass-panel {
+  background: rgba(11, 12, 16, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(102, 252, 241, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  transform: translateY(-5px);
+  border-color: rgba(102, 252, 241, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(102, 252, 241, 0.15);
+}
+
+/* Glow effects */
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.5), 0 0 20px rgba(102, 252, 241, 0.2);
+}
+
+.glow-text-blue {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.2);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(176, 38, 255, 0.5), 0 0 20px rgba(176, 38, 255, 0.2);
+}
+
+.glow-shadow-cyan {
+  box-shadow: 0 0 15px rgba(102, 252, 241, 0.25);
+}
+
+/* Light theme overrides */
+.light {
+  --color-cyber-dark: #f0f4f8;
+  --color-cyber-surface: rgba(255, 255, 255, 0.75);
+  --color-cyber-border: rgba(10, 25, 47, 0.1);
+  --color-neon-cyan: #0d9488; /* Darker teal for light mode */
+  --color-neon-blue: #0284c7; /* Darker blue */
+  --color-neon-purple: #7c3aed; /* Darker purple */
+  color: #1e293b;
+}
+
+.light body {
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(10, 25, 47, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(10, 25, 47, 0.06);
+}
+
+.light .glass-panel-hover:hover {
+  border-color: rgba(13, 148, 136, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(13, 148, 136, 0.1);
+}
+
+/* Hide scrollbar during loading */
+body.loading {
+  overflow: hidden;
+}
+
+/* Grid overlay background */
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(102, 252, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(102, 252, 241, 0.03) 1px, transparent 1px);
+}
+
+.light .grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(13, 148, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 148, 136, 0.03) 1px, transparent 1px);
+}
