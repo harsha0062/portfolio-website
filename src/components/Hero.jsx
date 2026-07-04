@@ -175,16 +175,7 @@ const Hero = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
 
-            <motion.a
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              href="/cover-letter.pdf"
-              download="Harshavardhan_Vaddi_Cover_Letter.pdf"
-              className="inline-flex items-center justify-center gap-2 border border-cyber-border bg-cyber-dark/40 hover:bg-cyber-dark hover:border-neon-cyan text-gray-300 hover:text-neon-cyan font-sans font-bold px-6 py-3.5 rounded-lg transition-all duration-300 cursor-pointer"
-            >
-              <FiFileText className="w-4 h-4" />
-              Cover Letter
-            </motion.a>
+
 
             <motion.a
               whileHover={{ scale: 1.03 }}
